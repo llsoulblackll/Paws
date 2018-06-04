@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset"
+    tools:context=".Survey.SurveyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titlesurvey01"/>
+
+        <RadioGroup
+            android:id="@+id/rgHomeType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:checkedButton="@+id/rbHouse">
+
+            <RadioButton
+                android:id="@id/rbHouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casa"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casa con patio" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departamento" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titlesurvey02"/>
+
+        <RadioGroup
+            android:id="@+id/rgPeopleAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:checkedButton="@+id/rbPeople12">
+
+            <RadioButton
+                android:id="@id/rbPeople12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 a 2"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 a más" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solo" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titlesurvey03"/>
+
+        <RadioGroup
+            android:id="@+id/rgOtherPets"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:checkedButton="@+id/noCheck">
+
+            <RadioButton
+                android:id="@+id/yesCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="yesChecked"
+                android:text="Si"/>
+
+            <RadioButton
+                android:id="@id/noCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="noChecked"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titlesurvey04"/>
+
+        <RadioGroup
+            android:id="@+id/rgPetDesc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:checkedButton="@+id/rbDog">
+
+            <RadioButton
+                android:id="@id/rbDog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perro"/>
+
+            <RadioButton
+                android:id="@+id/rbCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gato" />
+
+            <RadioButton
+                android:id="@+id/rbOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otros" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titlesurvey05"/>
+
+        <RadioGroup
+            android:id="@+id/rgWorkType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:checkedButton="@+id/rbWorkFullTime">
+
+            <RadioButton
+                android:id="@id/rbWorkFullTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full - Time"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Part - Time" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No trabajo" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titlesurvey06"/>
+
+        <RadioGroup
+            android:id="@+id/rgAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:checkedButton="@+id/rbAvailable">
+
+            <RadioButton
+                android:id="@id/rbAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Si"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tengo conocidos y/o familiares que pueden cuidarlo" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/regEnd"
+            android:onClick="End"/>
+
+    </LinearLayout>
+
+</ScrollView>

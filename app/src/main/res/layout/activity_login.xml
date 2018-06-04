@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context=".Login.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/pet_icon"
+        android:contentDescription="@string/contentdes"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_user"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:hint="@string/username">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="15sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_layout_pass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:hint="@string/password">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="15sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:onClick="Login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/textColor"
+        android:text="@string/loginbutton"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:onClick="Register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/textColor"
+        android:text="@string/registerbutton"/>
+
+</LinearLayout>

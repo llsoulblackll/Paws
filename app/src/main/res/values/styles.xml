@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PawApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPaw</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPaw</item>
+        <item name="colorAccent">@color/colorAccentPaw</item>
+    </style>
+
+    <style name="CampoTextoAzul" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimaryDarkPaw</item>
+    </style>
+
+    <style name="BottomNavigation">
+        <item name="android:background">@color/colorPrimaryDarkPaw</item>
+        <item name="itemIconTint">@color/textColor</item>
+        <item name="itemTextColor">@color/textColor</item>
+    </style>
+
+</resources>
